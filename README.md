@@ -1,7 +1,7 @@
 LibPush
 ==========
 ## class LibPush
-### Functions <hr/>
+### Functions
 #### getPushData
 * fun getPushData(day: Int): ArrayList<DBData>?
 >저장된 Push 데이터 반환 day : 현재부터 day 만큼의 기간동안 수신한 푸시 데이터를 리턴 
@@ -54,89 +54,89 @@ LibPush
 * fun with(context: Context): LibPush?
 >푸시 객체(Singleton)를 생성 한다.
 <hr/>
+
 Property
-class Property
-Constructors
-<init>
+========
+## class Property
+### Constructors
+* <init>
+>Property()
+  
+### Companion Object Properties
+* INTENT_EXTRA_CONTENT>
+>const val INTENT_EXTRA_CONTENT: String
 
-Property()
-Companion Object Properties
-INTENT_EXTRA_CONTENT>
+* INTENT_EXTRA_IMGURL
+>const val INTENT_EXTRA_IMGURL: String
 
-const val INTENT_EXTRA_CONTENT: String
-INTENT_EXTRA_IMGURL
+* INTENT_EXTRA_LINKURL
+>const val INTENT_EXTRA_LINKURL: String
 
-const val INTENT_EXTRA_IMGURL: String
-INTENT_EXTRA_LINKURL
+* INTENT_EXTRA_TITLE
+>const val INTENT_EXTRA_TITLE: String
+>>수신한 푸시 데이타를 Intent에서 추출할 때 필요한 Extra 키 값
 
-const val INTENT_EXTRA_LINKURL: String
-INTENT_EXTRA_TITLE
+* PUSH_AGR_N
+>const val PUSH_AGR_N: String
 
-const val INTENT_EXTRA_TITLE: String
-수신한 푸시 데이타를 Intent에서 추출할 때 필요한 Extra 키 값
+* PUSH_AGR_S
+>const val PUSH_AGR_S: String
 
-PUSH_AGR_N
-
-const val PUSH_AGR_N: String
-PUSH_AGR_S
-
-const val PUSH_AGR_S: String
-PUSH_AGR_Y
-
-const val PUSH_AGR_Y: String
-푸시 수신 동의 여부 설정 Y : 동의 N : 비동의 S : SKIP (나중에 설정 하기)
-
+* PUSH_AGR_Y
+>const val PUSH_AGR_Y: String
+>>푸시 수신 동의 여부 설정 Y : 동의 N : 비동의 S : SKIP (나중에 설정 하기)
+<hr/>
 
 DBData
-open class DBData
-Constructors
-<init>
+==========
+## open class DBData
+### Constructors
+* <init>
+>DBData()
+>>DBData(mId: Int, mTitle: String, mSubTitle: String, mBody: String, mImageUrl: String, mLinkUrl: String, mDay: String)
 
-DBData()
-DBData(mId: Int, mTitle: String, mSubTitle: String, mBody: String, mImageUrl: String, mLinkUrl: String, mDay: String)
-Functions
-getBody
+### Functions
+* getBody
+>open fun getBody(): String
 
-open fun getBody(): String
-getDay
+* getDay
+>open fun getDay(): String
 
-open fun getDay(): String
-getId
+* getId
+>open fun getId(): Int
 
-open fun getId(): Int
-getImageUrl
+* getImageUrl
+>open fun getImageUrl(): String
 
-open fun getImageUrl(): String
-getLinkUrl
+* getLinkUrl
+>open fun getLinkUrl(): String
 
-open fun getLinkUrl(): String
-getSubTitle
+* getSubTitle
+>open fun getSubTitle(): String
 
-open fun getSubTitle(): String
-getTitle
+* getTitle
+>open fun getTitle(): String
 
-open fun getTitle(): String
-setBody
+* setBody
+>open fun setBody(mBody: String): Unit
 
-open fun setBody(mBody: String): Unit
-setDay
+* setDay
+>open fun setDay(mDay: String): Unit
 
-open fun setDay(mDay: String): Unit
-setId
+* setId
+>open fun setId(mId: Int): Unit
 
-open fun setId(mId: Int): Unit
-setImageUrl
+* setImageUrl
+>open fun setImageUrl(mImageUrl: String): Unit
 
-open fun setImageUrl(mImageUrl: String): Unit
-setLinkUrl
+* setLinkUrl
+>open fun setLinkUrl(mLinkUrl: String): Unit
 
-open fun setLinkUrl(mLinkUrl: String): Unit
-setSubTitle
+* setSubTitle
+>open fun setSubTitle(mSubTitle: String): Unit
 
-open fun setSubTitle(mSubTitle: String): Unit
-setTitle
+* setTitle
+>open fun setTitle(mTitle: String): Unit
 
-open fun setTitle(mTitle: String): Unit
-toString
-
-open fun toString(): String
+* toString
+>open fun toString(): String
