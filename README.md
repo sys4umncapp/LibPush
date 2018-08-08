@@ -1,6 +1,5 @@
 LibPush
 ==========
-## class LibPush
 ### Functions
 #### getPushData
 * fun getPushData(day: Int): ArrayList<DBData>?
@@ -57,7 +56,6 @@ LibPush
 
 Property
 ========
-## class Property
 ### Constructors
 * <init>
 >Property()
@@ -89,7 +87,6 @@ Property
 
 DBData
 ==========
-## open class DBData
 ### Constructors
 * <init>
 >DBData()
