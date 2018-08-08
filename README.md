@@ -1,12 +1,11 @@
 LibPush
 ==========
-### class LibPush
-#### Functions
-
-##### getPushData
- fun getPushData(day: Int): ArrayList<DBData>?
+## class LibPush
+### Functions <hr/>
+#### getPushData
+* fun getPushData(day: Int): ArrayList<DBData>?
 >저장된 Push 데이터 반환 day : 현재부터 day 만큼의 기간동안 수신한 푸시 데이터를 리턴 
->(ex : 7 => 현재 부터 지난 7일간 푸시 수신한 데이터 반환)
+>>(ex : 7 => 현재 부터 지난 7일간 푸시 수신한 데이터 반환)
 
 init
 
