@@ -26,7 +26,7 @@ LibPush
 
 #### setLargeIcon
 * fun setLargeIcon(resId: Int): LibPush?
-푸시 수신 시 Notification 영역에 표시되는 large icon 의 resource Id를 설정한다. APP icon 의 resource Id를 설정.
+>푸시 수신 시 Notification 영역에 표시되는 large icon 의 resource Id를 설정한다. APP icon 의 resource Id를 설정.
 
 #### setLogEnable
 * fun setLogEnable(enable: Boolean): LibPush?
